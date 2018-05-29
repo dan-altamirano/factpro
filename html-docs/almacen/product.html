@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../js/vendor/js.cookie.js"></script>
+    <script type="text/javascript" src="../../js/redirection.js"></script>
+    <title>Ver Producto</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css" />
+    <link rel="stylesheet" href="../../css/main-individual.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+  <header>
+    <div class="navigation" id="session">
+      <a href="../index.html" class="item" id="logo">FACTPRO</a>
+      <div class="options">
+        <a href="../general/signup.html" class="item" id="sign-up">Crear cuenta</a>
+        <a href="../general/signin.html" class="item" id="sign-in">Iniciar sesion</a>
+      </div>
+    </div>
+  </header>
+  <div class="container" id="content">
+    <span class="form-title">Ver Producto</span>
+    <form action="index.html" method="post">
+      <span class="vista">ID</span>
+      <input class="vista" type="label" id="id" readonly>
+      <span class="vista">SKU</span>
+      <input class="vista" type="label" id="sku" readonly>
+      <span class="vista">NOMBRE</span>
+      <input class="vista" type="label" id="name" readonly>
+      <span class="vista">PRECIO</span>
+      <input class="vista" type="label" id="price" readonly>
+      <span class="vista">CANTIDAD</span>
+      <input class="vista" type="label" id="quantity" readonly>
+      <button class="btn" type="button" id="modificar">Modificar</button>
+      <button class="btn red" type="button" id="eliminar">Eliminar</button>
+    </form>
+  </div>
+  <footer class="center">
+    <p>FACTPRO
+    <a href="../general/contact.html"
+    title="Contact"
+    target="_blank"
+    class="colorlink">
+    Contacto
+    </a></p>
+  </footer>
+  <script type="text/javascript" src="../../js/vendor/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/vendor/sweetalert.min.js"></script>
+  <script type="text/javascript" src="../../js/validate-session-dir.js"></script>
+  <script type="text/javascript" src="../../js/view/product.js"></script>
+  </body>
+</html>

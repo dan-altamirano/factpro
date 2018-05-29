@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <link rel="stylesheet" href="../../css/sign.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="wrap-login">
+        <form novalidate>
+          <span class="form-title">Inicia sesión a FactPro</span>
+          <label for="usuario">Nombre de usuario</label>
+          <div class="wrap-input">
+            <input
+            class="inputc"
+            type="text"
+            id="username"
+            data-type="usuario"
+            name="usuario"
+            placeholder="Ingresa tu usuario"
+            />
+            <span class="focus-input"></span>
+          </div>
+          <label for="pass">Contraseña</label>
+          <div class="wrap-input">
+            <input
+            class="inputc"
+            type="password"
+            data-type="pass"
+            id="password"
+            name="pass"
+            placeholder="Ingresa tu contraseña"
+            />
+            <span class="focus-input"></span>
+          </div>
+          <div class="btn">
+            <button type="button" id="submit">Inicia Sesión</button>
+          </div>
+          <div class="forgot">
+						<span>
+							Olvidó
+						</span>
+						<a href="#">
+							contraseña?
+						</a>
+					</div>
+					<div class="create">
+						<a href="./signup.html">
+							Crear cuenta
+						</a>
+					</div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../js/vendor/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../js/vendor/sweetalert.min.js"></script>
+    <script type="text/javascript" src="../../js/vendor/md5.min.js"></script>
+    <script type="text/javascript" src="../../js/vendor/js.cookie.js"></script>
+    <script type="text/javascript" src="../../js/validate.js"></script>
+    <script type="text/javascript" src="../../js/validate-signin.js"></script>
+  </body>
+</html>

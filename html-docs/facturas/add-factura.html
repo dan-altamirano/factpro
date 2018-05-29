@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../js/vendor/js.cookie.js"></script>
+    <script type="text/javascript" src="../../js/redirection.js"></script>
+    <title>Agregar factura</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css" />
+    <link rel="stylesheet" href="../../css/main-form.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+<body>
+<header>
+  <div class="navigation" id="session">
+    <a href="../index.html" class="item" id="logo">FACTPRO</a>
+    <div class="options">
+      <a href="../general/signup.html" class="item" id="sign-up">Crear cuenta</a>
+      <a href="../general/signin.html" class="item" id="sign-in">Iniciar sesion</a>
+    </div>
+  </div>
+</header>
+<div class="main-container">
+  <div class="wrap">
+    <form novalidate>
+      <span class="form-title">Agregar factura</span>
+      <label for="clientname">Cliente</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="nombre"
+        id="clientname"
+        placeholder="Ingresar nombre"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="street">Direccion Fiscal</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="direccion"
+        id="street"
+        placeholder="Calle"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="colonia"
+        id="community"
+        placeholder="Colonia"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="direccion"
+        id="state"
+        placeholder="Municipio, Estado"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="cpostal"
+        id="zipcode"
+        placeholder="Codigo postal"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="rfc">RFC</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="valrfc"
+        id="rfc"
+        placeholder="RFC"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="ordernum">Orden de compra</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="number"
+        data-type="numero"
+        id="ordernum"
+        placeholder="Numero de orden"
+        min="1"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="invoicedate">Fecha</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="date"
+        data-type="fecha"
+        id="invoicedate"
+        placeholder="DD/MM/AAAA"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="concept">Concepto</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="concepto"
+        id="concept"
+        placeholder="Descripcion"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="payment">Término de pago</label>
+      <div class="wrap-input">
+        <select class="inputc" id="payment">
+          <option value="credito">Crédito</option>
+          <option value="contado">Contado</option>
+        </select>
+        <span class="focus-input"></span>
+      </div>
+      <label for="iva">IVA</label>
+      <div class="wrap-input">
+        <select class="inputc" id="iva">
+          <option value="16">General 16%</option>
+          <option value="14">Reducido 14%</option>
+          <option value="10">Superreducido 10%</option>
+        </select>
+        <span class="focus-input"></span>
+      </div>
+      <label for="totalprice">Costo total</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="number"
+        data-type="numero"
+        id="totalprice"
+        placeholder="Costo total"
+        min="1"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <div class="btn">
+        <button type="button" id="submit">Agregar</button>
+      </div>
+      <div class="create">
+        <a class="colorlink" href="../general/menu.html">
+          Cancelar
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="center">
+  <p>FACTPRO
+  <a href="../general/contact.html"
+  title="Contact"
+  target="_blank"
+  class="colorlink">
+  Contacto
+  </a></p>
+</footer>
+</footer>
+<script type="text/javascript" src="../../js/vendor/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/sweetalert.min.js"></script>
+<script type="text/javascript" src="../../js/validate-session-dir.js"></script>
+<script type="text/javascript" src="../../js/validate.js"></script>
+<script type="text/javascript" src="../../js/create/create-factura.js"></script>
+</body>
+</html>

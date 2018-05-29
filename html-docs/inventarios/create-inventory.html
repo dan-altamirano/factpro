@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../js/vendor/js.cookie.js"></script>
+    <script type="text/javascript" src="../../js/redirection.js"></script>
+    <title>Crear Inventario</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css" />
+    <link rel="stylesheet" href="../../css/main-form.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+<header>
+  <div class="navigation" id="session">
+    <a href="../index.html" class="item" id="logo">FACTPRO</a>
+    <div class="options">
+      <a href="../general/signup.html" class="item" id="sign-up">Crear cuenta</a>
+      <a href="../general/signin.html" class="item" id="sign-in">Iniciar sesion</a>
+    </div>
+  </div>
+</header>
+<div class="main-container">
+  <div class="wrap">
+  <form action="" id="agregar" method="POST" enctype="multipart/form-data">
+    <span class="form-title">Crear Inventario</span>
+
+    <label for="id">SKU</label>
+    <div class="wrap-input">
+      <input
+      class="inputc"
+      type="text"
+      id="sku"
+      name="sku"
+      placeholder="SKU del inventario"
+      required
+      />
+    </div>
+    <label for="description">Descripción</label>
+    <div class="wrap-input">
+      <input
+      class="inputc"
+      type="text"
+      id="description"
+      name="description"
+      placeholder="Descripción del inventario"
+      required
+      />
+    </div>
+    <label for="dateinventory">Fecha</label>
+    <div class="wrap-input">
+      <input
+      class="inputc"
+      type="date"
+      data-type="fecha"
+      id="dateinventory"
+      name="dateinventory"
+      placeholder="DD/MM/AAAA"
+      />
+      <span class="focus-input"></span>
+    </div>
+    <label for="status">Estado</label>
+    <div class="wrap-input">
+      <select disabled class="inputc" id="status">
+        <option selected value="Activo">Activo</option>
+      </select>
+      <span class="focus-input"></span>
+    </div>
+    <label for="balance">Balance</label>
+    <div class="wrap-input">
+      <input
+      class="inputc"
+      type="text"
+      id="balance"
+      name="balance"
+      value="0"
+      required
+      disabled
+      />
+    </div>
+      <div class="btn">
+        <button type="button" name="button">Crear inventario</button>
+      </div>
+      <div class="create">
+        <a href="../general/menu.html">
+          Cancelar
+        </a>
+      </div>
+  </form>
+</div>
+</div>
+<footer class="center">
+  <a href="../general/contact.html"
+  title="Contact"
+  target="_blank"
+  class="colorlink">
+  Contact
+</a>
+</footer>
+<script type="text/javascript" src="../../js/vendor/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../js/vendor/sweetalert.min.js"></script>
+<script type="text/javascript" src="../../js/validate-session-dir.js"></script>
+<script type="text/javascript" src="../../js/validate.js"></script>
+<script type="text/javascript" src="../../js/create/create-inventario.js"></script>
+  </body>
+</html>

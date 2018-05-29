@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../../js/vendor/js.cookie.js"></script>
+    <!--
+    <script type="text/javascript" src="../../js/redirection.js"></script>
+    -->
+    <title>Modificar compra</title>
+    <link rel="stylesheet" href="../../vendor/normalize.css" />
+    <link rel="stylesheet" href="../../css/main-form.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+<body>
+<header>
+  <div class="navigation" id="session">
+    <a href="../index.html" class="item" id="logo">FACTPRO</a>
+    <div class="options">
+      <a href="../general/signup.html" class="item" id="sign-up">Crear cuenta</a>
+      <a href="../general/signin.html" class="item" id="sign-in">Iniciar sesion</a>
+    </div>
+  </div>
+</header>
+<div class="main-container">
+  <div class="wrap">
+    <form novalidate>
+      <span class="form-title">Modificar compra</span>
+      <label for="department">Departamento que solicita</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="departamento"
+        id="department"
+        placeholder="Ingresa nombre de departamento"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="nombre">Nombre del producto</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="text"
+        data-type="producto"
+        id="productname"
+        placeholder="Ingresa nombre del producto"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="fpedido">Fecha de pedido</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="date"
+        data-type="fecha"
+        id="orderdate"
+        placeholder="DD/MM/AAAA"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="fentrega">Fecha de entrega</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="date"
+        data-type="fecha"
+        id="deliverydate"
+        placeholder="DD/MM/AAAA"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="cantidad">Cantidad</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="number"
+        data-type="numero"
+        id="quantity"
+        min="1"
+        placeholder="1"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <label for="preciounitario">Costo unitario</label>
+      <div class="wrap-input">
+        <input
+        class="inputc"
+        type="number"
+        data-type="numero"
+        id="unitprice"
+        placeholder="0.00"
+        min="1"
+        />
+        <span class="focus-input"></span>
+      </div>
+      <div class="btn">
+        <button type="button" id="submit">Modificar</button>
+      </div>
+      <div class="create">
+        <a class="colorlink" href="../general/menu.html">
+          Cancelar
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="center">
+  <p>FACTPRO
+  <a href="../general/contact.html"
+  title="Contact"
+  target="_blank"
+  class="colorlink">
+  Contacto
+  </a></p>
+</footer>
+<script type="text/javascript" src="../../js/vendor/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/sweetalert.min.js"></script>
+<script type="text/javascript" src="../../js/validate-session-dir.js"></script>
+<script type="text/javascript" src="../../js/validate.js"></script>
+<script type="text/javascript" src="../../js/edit/edit-compra.js"></script>
+</body>
+</html>
